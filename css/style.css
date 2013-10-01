@@ -1,0 +1,217 @@
+/*
+Project Name: Busy Hands
+Client: Busy Hands
+Author: Chris Castiglione | www.twitter.com/castig 
+Developed @ General Assembly in NYC
+Author URI: http://www.busyhands.com
+Version: 1.0
+
+[Table Of Contents] 
+
+	01- GENERAL
+	02- LAYOUT 
+	03- SOCIAL MEDIA  
+	04- MAIN CONTENT
+	05- COLUMNS
+	06- BLURB
+	07- FOOTER
+	08- MISC
+
+*/
+
+/*----------------------------------------------------------------------------- 
+=01 GENERAL 
+-----------------------------------------------------------------------------*/
+/* In General we set up all our default styles for the site: body, h1-h6, p, a, etc. */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333;
+	line-height: 1.1;
+}
+
+
+a {
+	text-decoration:none;
+	color:#1FA2E1;
+}
+
+	a:hover {
+}
+
+p {
+	margin:0 0 15px 0; /* 15px bottom margin is a nice default for <p> tags */
+}
+
+/* LOGO with image replacement for the text */
+h1 {
+	font-size: 25px;
+	background: url('../images/logo.png') no-repeat;
+	float: left; 
+	
+	/* Old "Phark Method (2003)" for image replacement
+ 		/* text-indent:-9999em; /* 
+
+	 /* New "Scott Kellum Method (2012)" for image replacement */
+     text-indent: 100%;
+     white-space: nowrap;
+     overflow: hidden;
+}
+	/* LOGO */
+	h1 a {
+		width: 160px;
+		height: 35px;
+		display: block;
+	}
+
+.tagline {
+	-webkit-font-smoothing: antialiased;
+	font-family: 'ks-book','ks-medium','HelveticaNeue-Light','HelveticaNeue',arial;
+	font-weight: lighter;
+	text-shadow: 0 2px 4px rgba(0,0,0,.2);
+	color: #fff;
+	font-size: 20px;
+	padding-top: 10px;
+	padding-left: 20px;
+	line-height: 1.2;
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+/*----------------------------------------------------------------------------- 
+=02 LAYOUT 
+-----------------------------------------------------------------------------*/
+
+#container {
+	margin:0 auto;
+}
+
+.content{
+	height: 800px;
+	background: url('../images/background.jpeg') no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover; /* the next 3 lines are "browser prefixes", they are necessary to include for CSS3 techniques */
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/*----------------------------------------------------------------------------- 
+=03 NAVIGATION 
+-----------------------------------------------------------------------------*/
+
+nav {
+	height: 40px;
+	background-color: white;
+}
+
+nav ul li{
+	float:left;
+	padding-left: 20px;
+	margin: 2px;
+}
+
+nav ul li a {
+	display:block;
+	height:20px;
+	color:#ccc;
+	padding-top: 10px;
+	font-size:17px; /* makes the nav text a bit larger than the default body font-size */
+}
+
+	nav ul li a:hover {
+		text-decoration:none;
+		color:white;
+	}
+
+
+
+/*----------------------------------------------------------------------------- 
+=05 COLUMNS 
+-----------------------------------------------------------------------------*/
+
+
+#home-boxes {
+	overflow:hidden;
+	padding: 100px;
+
+}
+
+	#home-boxes .home-box {
+		float: left;
+		width:290px;
+		margin-right:80px;
+		background:url(../images/bk_dotted_thick.png) repeat-x;
+	}
+
+		#home-boxes .home-box img {
+			border:6px solid #E2E2E2;
+		}
+
+		#home-boxes .home-box img:hover {
+			border-color:#F9F9F9;
+		}
+
+	#home-boxes .last{ 
+		margin-right:0; /* removes the right margin so that the image is both flush right, and so that it doesn't get pushed down to the next line */
+	}
+
+	#home-boxes .home-box h2 {
+		padding: 10px 0 15px 0;
+		color: white;
+		font-size: 24px;
+	}
+
+	p{
+		color: white;
+		font-size: 18px;
+	}
+
+/*----------------------------------------------------------------------------- 
+=07 FOOTER 
+-----------------------------------------------------------------------------*/
+
+footer {
+	background: white;
+	min-height: 30px;
+}
+
+/* Copyright */
+
+#copyright {
+	color: #333;	
+	float:left;
+	width:290px;
+	padding: 10px;
+}
+
+#companybottom {
+	float:right;
+	width:290px;
+	padding: 1px;
+}
+
+
+/*----------------------------------------------------------------------------- 
+=08 MISC 
+-----------------------------------------------------------------------------*/
+
+
+
+.alignleft {
+	float:left;
+	margin:5px 15px 5px 0;
+}
+
+.alignright {
+	float:right;
+	margin:5px 0 5px 15px;
+}
+
+.clear {
+	clear:both;	
+}
+
